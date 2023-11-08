@@ -1,0 +1,44 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	float val1, val2;
+	cout <<"Saisir la première valeur:";
+	cin >>val1;
+
+	cout <<"Saisir la deuxième valeur:";
+	cin >>val2;
+
+	char operateur;
+	cout <<"saisir l'opérateur:";
+	cin >>operateur;
+
+	float resultat;
+
+if (operateur == '/') {
+	resultat = val1 / val2;
+	cout<< resultat;
+}
+if (operateur == '-') {
+	resultat = val1 - val2;
+	cout<<resultat;
+}
+if (operateur == '+') {
+	resultat = val1 + val2;
+	cout<<resultat;
+}
+if (operateur == '*') {
+	resultat = val1 * val2;
+	cout<<resultat;
+	}
+if (operateur != '+', '-', '/', '*') {
+	cout<<"erreur";
+	system("PAUSE");
+		return -1;
+		}};
+cout << "FIN DU PROGRAMME CALCULATRICE SANS ERREUR" << endl;
+return 0;
+};
+

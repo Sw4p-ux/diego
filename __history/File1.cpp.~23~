@@ -1,0 +1,50 @@
+#include <iostream>
+#include <fstream>
+
+using namespace std;
+
+int main()
+{
+	float val1, val2;
+	cout <<"Saisir la première valeur:";
+	cin >>val1;
+
+	cout <<"Saisir la deuxième valeur:";
+	cin >>val2;
+
+	char operateur;
+	cout <<"saisir l'opérateur:";
+	cin >>operateur;
+
+	float resultat;
+	system("PAUSE");
+
+if (operateur == '/') {
+	resultat = val1 / val2;
+	cout<<resultat;
+}
+if (operateur == '-') {
+	resultat = val1 - val2;
+	cout<<resultat;
+}
+if (operateur == '+') {
+	resultat = val1 + val2;
+	cout<<resultat;
+}
+if (operateur == '*') {
+	resultat = val1 * val2;
+	cout<<resultat;
+	}
+if (operateur != '+', '-', '/', '*') {
+	system("PAUSE");
+		return -1;
+	}
+	else
+		cout << "FIN DU PROGRAMME CALCULATRICE SANS ERREUR" << endl;
+return 0;
+
+string file_name = "journal.log";
+ifstream input_stream(file_name);
+close();
+};
+
